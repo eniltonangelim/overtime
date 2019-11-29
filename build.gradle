@@ -1,0 +1,32 @@
+subprojects {
+	apply plugin: 'java'
+
+	group = 'br.com.f13.overtime'
+	version = 'v0.0.0'
+
+	sourceCompatibility = 1.11
+	targetCompatibility = 1.11
+
+	repositories {
+		jcenter()
+		mavenCentral()
+	}
+
+	afterEvaluate {
+		repositories {
+			jcenter()
+		}
+
+		compileJava {
+			inputs.property("moduleName", moduleName)
+			doFirst {
+				options.compilerArgs = [
+						'--module-path', classpath.asPath,
+				]
+				classpath = files()
+			}
+		}
+	}
+
+}
+
