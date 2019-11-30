@@ -11,9 +11,9 @@ public class AtrasoAbstractCompensatoryTime extends AbstractCompensatoryTime {
 
     @Override
     public AbstractCompensatoryTime check(Period period) {
-
         if (period.getType().equals(super.type)){
-
+            super.period = period;
+            return this;
         }
 
         return super.checkNext(period);
