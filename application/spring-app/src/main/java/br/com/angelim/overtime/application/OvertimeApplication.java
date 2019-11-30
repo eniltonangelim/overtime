@@ -1,6 +1,6 @@
 package br.com.angelim.overtime.application;
 
-import br.com.angelim.overtime.domain.comptime.entity.AbstractCompensatoryTime;
+import br.com.angelim.overtime.domain.comptime.entity.chain.AbstractCompensatoryTime;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

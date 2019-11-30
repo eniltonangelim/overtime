@@ -1,6 +1,7 @@
 module overtime.spring {
 
     requires overtime.domain;
+    requires overtime.usecase;
 
     requires spring.core;
     requires spring.beans;

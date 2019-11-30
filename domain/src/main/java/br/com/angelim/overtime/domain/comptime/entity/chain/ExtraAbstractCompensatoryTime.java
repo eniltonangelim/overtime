@@ -1,5 +1,6 @@
-package br.com.angelim.overtime.domain.comptime.entity;
+package br.com.angelim.overtime.domain.comptime.entity.chain;
 
+import br.com.angelim.overtime.domain.comptime.entity.CompensatoryTimeType;
 import br.com.angelim.overtime.domain.period.entity.Period;
 
 public class ExtraAbstractCompensatoryTime extends AbstractCompensatoryTime {

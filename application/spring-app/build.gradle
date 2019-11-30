@@ -18,6 +18,7 @@ ext.moduleName = 'overtime.app'
 dependencies {
 	implementation(
 			project(":domain"),
+			project(":usecase"),
 			'org.springframework.boot:spring-boot-starter'
 	)
 }
