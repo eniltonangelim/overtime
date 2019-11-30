@@ -1,3 +1,9 @@
 apply plugin: 'java-library'
 
 ext.moduleName = 'overtime.usecase'
+
+dependencies {
+    implementation(
+            project(":domain")
+    )
+}

@@ -5,6 +5,10 @@ public class Credential {
     private String username;
     private String password;
 
+    private Credential() {
+
+    }
+
     public String getUsername() {
         return username;
     }

@@ -7,7 +7,7 @@ public class Contact {
     private Contact() {
     }
 
-    public Contact(String email) {
+    private Contact(String email) {
         this.email = email;
     }
 
@@ -15,7 +15,7 @@ public class Contact {
         return email;
     }
 
-    public static Contact with(String email) {
+    public static Contact of(String email) {
         return new Contact(email);
     }
 
