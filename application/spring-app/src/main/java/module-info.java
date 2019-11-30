@@ -1,5 +1,7 @@
 module overtime.spring {
 
+    requires overtime.domain;
+
     requires spring.core;
     requires spring.beans;
     requires spring.context;
